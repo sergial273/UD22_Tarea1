@@ -17,10 +17,10 @@ public class Quitar extends JFrame {
     public JButton guardarButton, cancelarButton;
 
     public Quitar() {
-        // Crear un nuevo marco (JFrame)
+        
         setSize(450, 350);
 
-        // Crear un panel principal
+        
         mainPanel = new JPanel();
         mainPanel.setLayout(new GridBagLayout());
 
@@ -32,11 +32,11 @@ public class Quitar extends JFrame {
         constraints.insets.top = 5;
         constraints.insets.bottom = 5;
 
-        // Etiquetas y campos de texto
+        
         nombreLabel = new JLabel("Id a quitar:");
         nombreTextField = new JTextField(25);
         
-        // Botones
+        
         guardarButton = new JButton("Quitar");
         cancelarButton = new JButton("Atras");
         
@@ -50,7 +50,7 @@ public class Quitar extends JFrame {
         constraints.gridwidth = GridBagConstraints.REMAINDER; // Extender por toda la fila
         mainPanel.add(nombreTextField, constraints);
 
-        constraints.gridwidth = 1; // Restablecer el valor a 1 para los botones
+        constraints.gridwidth = 1; 
         constraints.gridy = 5;
         mainPanel.add(guardarButton, constraints);
         constraints.gridx = 2;
